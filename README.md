@@ -1,5 +1,4 @@
-Project Framework with Bootstrap
+CIS295CMS Project 
 ================================
 
-This codebase is the base framework for your project with bootstrap
-already enabled.
+My CIS295CMS Project
