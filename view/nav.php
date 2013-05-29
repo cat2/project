@@ -17,18 +17,28 @@
                 <li><a href="#">Contact</a></li>
               </ul>
 
+
+<?php if ( !empty($_SESSION["username"]) ) { ?>
+
               <ul class="nav pull-right">
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Welcome
-<?php
-                print ( !empty($_SESSION["username"]) ? $_SESSION["username"] : "Guest" );
-?>
+                   <?php print $_SESSION["username"]; ?>
                   </a>
                   <ul class="dropdown-menu">
                     <li><a href="index.php?q=auth&a=logout">Logout</a></li>
                   </ul>
                 </li>
               </ul>
+
+<?php } else { ?>
+
+              <ul class="nav pull-right">
+                <li class="navbar-text">Welcome Guest</li>
+              </ul>
+
+<?php } ?>
+
 
             </div><!--/.nav-collapse -->
           </div>
