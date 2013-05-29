@@ -20,6 +20,22 @@ switch ( $_GET["a"] ) {
         break;
 
 
+    case "add":
+
+        include( APP_VIEW ."/prod/prodSubNav.php" );
+        include( APP_VIEW ."/prod/addView.php" );
+        break;
+
+
+    case "insert":
+
+        insert_product( $_POST );
+
+        include( APP_VIEW ."/prod/prodSubNav.php" );
+        include( APP_VIEW ."/prod/insertView.php" );
+        break;
+
+
     default:
 
         $product = list_products();
