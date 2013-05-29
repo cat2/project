@@ -12,9 +12,8 @@
             <div class="nav-collapse collapse">
 
               <ul class="nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="index.php?q=prod">Products</a></li>
               </ul>
 
 
